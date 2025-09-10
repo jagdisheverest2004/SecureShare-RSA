@@ -70,7 +70,7 @@ public class WebSecurityConfig {
                                 .requestMatchers("/api/auth/authenticate/signin").permitAll()
                                 .requestMatchers("/api/auth/authenticate/verify-otp").permitAll()
                                 .requestMatchers("/api/auth/authenticate/signout").authenticated()
-                                .requestMatchers("/api/auth/otp/").permitAll()
+                                .requestMatchers("/api/auth/otp/**").permitAll()
                                 .requestMatchers("/api/auth/user-utils/initiate").permitAll()
                                 .requestMatchers("/api/auth/user-utils/reset").permitAll()
                                 .requestMatchers("/api/auth/user-utils/find-username").permitAll()
